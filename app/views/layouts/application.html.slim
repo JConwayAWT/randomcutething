@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Random Cute Thing
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+    meta name="Description" content="Click the button for another cute."
+
+
+  body
+    #full-wrapper
+      #full-header
+        
+
+      #full-content
+        .container#body-container
+          = yield
+
+      #full-footer
+        .footer#footer
+          .container
+            .row
+              .col-md-12
+                .text-center.soft-gray-text.small-text.text-padded-top
+                  | Portions of this site ©#{Time.now.year} by its creator(s)
