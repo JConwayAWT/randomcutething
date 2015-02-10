@@ -15,11 +15,13 @@ class Cute < ActiveRecord::Base
         if url.downcase.ends_with?(".jpg",".jpeg",".gif",".png",".bmp")
           c = Cute.new
           c.url = url
-          c.save!
-          cutes += 1
-          if cutes == 1
+
+          if cutes == 0
             Cute.delete_all
           end
+          
+          c.save!
+          cutes += 1
         end
       end
     end
