@@ -8,7 +8,22 @@ class CutesController < ApplicationController
     '"I CAN\'T EVEN" - Basic white girls',
     "*squishsquishsquish",
     "太可爱了！",
-    "IT'S SO KAWAII"
+    "IT'S SO KAWAII",
+    "I WANT ONE",
+    "HERE KITTY KITTY KITTY KITTY",
+    "HOW TO DO",
+    "MOAR PLZ",
+    "please sir i'd like some moar",
+    "i could do this all day",
+    "no such thing as too cute!",
+    ">.<  >.<  >.<",
+    ">>>>>>>>.<<<<<<<<<",
+    ">.<;;  >.<;;",
+    "^.^   ^.^    ^.^   ^.^",
+    ">(^.^)<  >(^.^)<",
+    "another cutegasm",
+    "omgomgomg~~~~~~",
+    "wtf how to be so cute"
   ]
 
   # GET /cutes

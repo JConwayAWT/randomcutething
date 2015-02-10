@@ -4,6 +4,12 @@ require 'json'
 class Cute < ActiveRecord::Base
 
   def self.update_cutes
+    if Cute.count > 1000
+      Cute.first(100).each do |c|
+        c.destroy
+      end
+    end
+
     cutes = 0
     uri = URI("http://www.reddit.com/r/aww/new.json?limit=100")
     response = Net::HTTP.get_response(uri)
@@ -15,11 +21,6 @@ class Cute < ActiveRecord::Base
         if url.downcase.ends_with?(".jpg",".jpeg",".gif",".png",".bmp")
           c = Cute.new
           c.url = url
-
-          if cutes == 0
-            Cute.delete_all
-          end
-          
           c.save!
           cutes += 1
         end
