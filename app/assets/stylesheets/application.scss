@@ -63,7 +63,6 @@ nav.navbar{
 }
 
 #full-header{
-
 }
 
 #full-content{
@@ -113,4 +112,19 @@ nav.navbar{
 
 .padding-from-title{
   padding-top: 35px;
+}
+
+.header-row{
+  background-color: #eeeeee;
+  height: 50px;
+  border-bottom: thin solid #cccccc;
+  .random-cute-title{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 11px;
+    .cute{
+      color: rgb(113, 163, 255);
+    }
+  }
 }

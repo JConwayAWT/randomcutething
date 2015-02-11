@@ -23,7 +23,8 @@ class CutesController < ApplicationController
     ">(^.^)<  >(^.^)<",
     "another cutegasm",
     "omgomgomg~~~~~~",
-    "wtf how to be so cute"
+    "wtf how to be so cute",
+    ":3 :3 :3 :3 :3"
   ]
 
   # GET /cutes
