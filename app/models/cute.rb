@@ -11,7 +11,7 @@ class Cute < ActiveRecord::Base
     end
 
     cutes = 0
-    uri = URI("http://www.reddit.com/r/aww/new.json?limit=100")
+    uri = URI("http://www.reddit.com/r/aww/top.json?limit=100")
     response = Net::HTTP.get_response(uri)
     if response.is_a?(Net::HTTPSuccess)
       j = JSON.parse(response.body)
